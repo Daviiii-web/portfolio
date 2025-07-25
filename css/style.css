@@ -262,7 +262,7 @@ html {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 900px ) {
 
 
   .navegacao-pagina {
@@ -345,6 +345,63 @@ html {
     font-size: 16px;
   }
 }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    font-size: 24px;
+    height: auto;
+    text-align: center;
+  }
+
+  .texto {
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .foto-davi {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .projetos-quadrados {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projetos-quadrados div {
+    width: 280px;
+    height: 250px;
+    margin: 20px;
+  }
+
+  .btn-contato {
+    font-size: 18px;
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-wrapper {
+    padding: 0 20px;
+  }
+
+  .formulario-contato input,
+  .formulario-contato textarea {
+    font-size: 16px;
+  }
+
+  .formulario-contato button {
+    font-size: 16px;
+  }
+}
+
 
 
 
