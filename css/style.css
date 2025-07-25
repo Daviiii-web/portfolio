@@ -1,3 +1,12 @@
+:root {
+  --cabecalho: #d6d6d6;
+  --cor-fundo:#1e1e1e;
+  --texto-principal: 	#f2f2f2;
+  --titulo: #eaeaea;
+  
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +14,7 @@
 }
 
 .menu{
-   background-color: rgb(16, 16, 16);
+   background-color: var(--cabecalho)
     
 }
 
@@ -25,7 +34,7 @@
 
 .lista-navegacao a {
   position: relative;
-  color: white;
+  color: #121212;
   text-decoration: none;
 }
 
@@ -36,7 +45,7 @@
   bottom: -5px;
   width: 0%;
   height: 2px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   transition: width 0.3s ease-in-out;
 }
 
@@ -56,8 +65,8 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    color: white;
-    background-color: rgb(16, 16, 16);
+    color: var(--texto-principal);
+    background-color: var(--cor-fundo);
     height: 50vw;
     align-items: center;
     font-size: 30px;
@@ -86,7 +95,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(16, 16, 16);
+    background-color: var(--cor-fundo);
     color: white;
 }
 
@@ -113,7 +122,7 @@ p {
     align-items: center;
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: var(--titulo);
     background-color: #222;
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -138,7 +147,7 @@ p {
 }
 
 .contato {
-    background-color: rgb(16, 16, 16);
+    background-color: var(--cor-fundo);
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -160,26 +169,12 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.whatsapp {
-    background-color: #25D366;
-    color: white;
-}
 
-.whatsapp:hover {
-    background-color: #1ebe5d;
-}
 
-.email {
-    background-color: #0072c6;
-    color: white;
-}
 
-.email:hover {
-    background-color: #005999;
-}
 
 .contato {
-    background-color: rgb(16, 16, 16);
+    background-color: var(--cor-fundo);
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -207,7 +202,7 @@ p {
 
 .whatsapp {
     background-color: #25D366;
-    color: white;
+    color: var(--titulo);
 }
 
 .whatsapp:hover {
@@ -216,7 +211,7 @@ p {
 
 .email {
     background-color: #0072c6;
-    color: white;
+    color: var(--titulo);
 }
 
 .email:hover {
